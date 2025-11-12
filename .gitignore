@@ -1,21 +1,54 @@
-# Compiled Object files
+# ========================
+# 🧱 Compilación de C / C++
+# ========================
+
+# Archivos objeto y temporales
 *.o
 *.obj
+*.lo
+*.slo
 
-# Executables
+# Ejecutables
 *.out
 *.exe
 *.app
 
-# Build folders
+# Ejecutables sin extensión (comunes en macOS/Linux)
+# Ignora archivos en la raíz del proyecto que no tengan punto
+/[a-zA-Z0-9]*
+
+# Directorios de build típicos
 bin/
 build/
 out/
 dist/
 
-# macOS system files
-.DS_Store
+# Librerías compiladas
+*.a
+*.so
+*.dylib
+*.la
+*.lai
 
-# Text or temporary files
+# Archivos de depuración
+*.dSYM/
+*.dwo
+*.pdb
+*.ilk
+
+# Archivos de log o temporales
 *.log
 *.tmp
+
+# macOS system files
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Archivos de texto generados accidentalmente
+*.txt
+
+# Archivos de editor (VSCode, Xcode, etc.)
+.vscode/
+.idea/
+*.swp
