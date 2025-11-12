@@ -1,18 +1,28 @@
-# ========================
-# C / C++ build artefacts
-# ========================
+# ====================================
+# 🎯 C / C++ en macOS con VS Code
+# ====================================
 
-# Object files
+# Archivos objeto
 *.o
 *.obj
 *.lo
 *.slo
 
-# Executables
+# Ejecutables con extensión
 *.out
 *.exe
 *.app
 a.out
+
+# 🧱 Ejecutables sin extensión (creados por Code Runner)
+# Ignora archivos sin punto en la raíz que sean ejecutables
+# pero NO ignores los .cpp, .h ni .txt
+# (solo si NO tienen extensión y son ejecutables)
+# Usa este truco con el atributo de ejecución
+
+# Solo ignora archivos sin extensión marcados como ejecutables
+# en el sistema (macOS/Linux)
+**/*(mode:755)
 
 # Build folders
 bin/
@@ -20,29 +30,29 @@ build/
 out/
 dist/
 
-# Libraries
+# Librerías compiladas
 *.a
 *.so
 *.dylib
 *.la
 *.lai
 
-# Debug files
+# Archivos de depuración
 *.dSYM/
 *.dwo
 *.pdb
 *.ilk
 
-# macOS system files
+# Archivos del sistema macOS
 .DS_Store
 .AppleDouble
 .LSOverride
 
-# Logs and temporary files
+# Logs y temporales
 *.log
 *.tmp
 
-# Editor / IDE config
+# Configuración de editores
 .vscode/
 .idea/
 *.swp
