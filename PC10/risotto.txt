@@ -1,0 +1,8 @@
+130 350 Rice
+50 16 Celery
+200 172 Beef thing
+6 150 Garlic 
+30 884 Olive Oil
+50 717 Butter
+60 402 Cheese
+0

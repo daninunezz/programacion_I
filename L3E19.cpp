@@ -26,3 +26,5 @@ double average(tGrades grades) {
 
     for (int i = 0; i < NumGrades; i++)
 }
+
+//not finished
